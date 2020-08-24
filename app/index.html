@@ -9,6 +9,7 @@
     <title>Новостная страница</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="">
 </head>
 
 <body class="page">
@@ -183,34 +184,32 @@
             <div class="container">
                 <div class="main-news">
                     <div class="news-block">
-                        <div class="top-news top-news-first">
+                        <div class="news-gray top-news top-news-first">
                             <div class="top-news__inner">
                                 <button class="top-news__button">пенсии</button>
                                 <div class="top-news__title">В ПФР рассказали,
                                     кому
                                     могут отказать в оформлении пенсий</div>
-                                <ul class="top-news__info">
-                                    <li class="date top-news__info-item">
+                                <ul class="news-info">
+                                    <li class="date news-info-item">
                                         <img src="images/time-icon.svg"
                                             alt="time icon" class="date__icon">
                                         <div class="date__text">
                                             20.12.2017
                                         </div>
                                     </li>
-                                    <li
-                                        class="top-news__views top-news__info-item">
+                                    <li class="news-views news-info-item">
                                         <img src="images/views-icon.svg"
                                             alt="views icon"
-                                            class="top-news__views-icon">
-                                        <div class="top-news__views-text">1 278
+                                            class="news-views-icon">
+                                        <div class="news-views-text">1 278
                                         </div>
                                     </li>
-                                    <li
-                                        class="top-news__comments top-news__info-item">
+                                    <li class="news-comments news-info-item">
                                         <img src="images/comments-icon.svg"
                                             alt="comments icon"
-                                            class="top-news__comments-icon">
-                                        <div class="top-news__comments-text">3
+                                            class="news-comments-icon">
+                                        <div class="news-comments-text">3
                                         </div>
                                     </li>
                                 </ul>
@@ -285,40 +284,38 @@
                         </div>
                     </div>
 
-                    <div class="advertising">
+                    <div class="advertising advertising__first">
                         <img src="images/advertising.jpg" alt="nerdwallet"
                             class="advertising__image">
                     </div>
 
                     <div class="news-block">
-                        <div class="top-news top-news-second">
+                        <div class="news-gray top-news top-news-second">
                             <div class="top-news__inner">
                                 <button class="top-news__button">пенсии</button>
                                 <div class="top-news__title">В ПФР рассказали,
                                     кому
                                     могут отказать в оформлении пенсий</div>
-                                <ul class="top-news__info">
-                                    <li class="date top-news__info-item">
+                                <ul class="news-info">
+                                    <li class="date news-info-item">
                                         <img src="images/time-icon.svg"
                                             alt="time icon" class="date__icon">
                                         <div class="date__text">
                                             20.12.2017
                                         </div>
                                     </li>
-                                    <li
-                                        class="top-news__views top-news__info-item">
+                                    <li class="news-views news-info-item">
                                         <img src="images/views-icon.svg"
                                             alt="views icon"
-                                            class="top-news__views-icon">
-                                        <div class="top-news__views-text">1 278
+                                            class="news-views-icon">
+                                        <div class="news-views-text">1 278
                                         </div>
                                     </li>
-                                    <li
-                                        class="top-news__comments top-news__info-item">
+                                    <li class="news-comments news-info-item">
                                         <img src="images/comments-icon.svg"
                                             alt="comments icon"
-                                            class="top-news__comments-icon">
-                                        <div class="top-news__comments-text">3
+                                            class="news-comments-icon">
+                                        <div class="news-comments-text">3
                                         </div>
                                     </li>
                                 </ul>
@@ -390,16 +387,19 @@
                         </div>
                     </div>
 
-                    <div class="advertising">
+                    <div class="advertising advertising__second">
                         <img src="images/advertising2.jpg" alt="app annie"
                             class="advertising__image">
                     </div>
 
-                    <a href="#" class="read">Читать еще новости</a>
+                    <div class="button">
+                        <a href="#" class="button__link read">Читать еще
+                            новости</a>
+                    </div>
 
                 </div>
 
-                <div class="sidebar">
+                <aside class="sidebar">
                     <div class="social sidebar-block">
                         <h3 class="social__title">Читайте нас</h3>
                         <ul class="social__list">
@@ -583,34 +583,230 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </aside>
 
-                <div class="experience">
-                    <h2 class="experience__title">
-                        <div class="experience-news">
-                            <div class="experience__main-news experience__news">
-                                <h3
-                                    class="experience-news__title experience__main-title">
-                                </h3>
-                            </div>
-                            <div class="experience-news">
-                                <h3 class="experience-news__title"></h3>
-                            </div>
-                            <div class="experience-news">
-                                <h3 class="experience-news__title"></h3>
-                            </div>
-                            <div class="experience-news">
-                                <h3 class="experience-news__title"></h3>
-                            </div>
-                            <div class="experience-news">
-                                <h3 class="experience-news__title"></h3>
-                            </div>
+
+            </div>
+        </section>
+        <section class="experience">
+            <div class="container">
+                <h2 class="experience__title">Личный опыт</h2>
+                <div class="experience__content">
+                    <div
+                        class="experience__main-news experience-news news-gray">
+                        <img src="images/experience1.jpg" alt="experience"
+                            class="experience-news__background">
+                        <div class="experience-news__content">
+                            <h3
+                                class="experience-news__title experience__main-title">
+                                Личный опыт: положить деньги на вклад прямо
+                                из дома – миф или реальность?
+                            </h3>
+                            <ul class="news-info">
+                                <li class="date news-info-item">
+                                    <img src="images/time-icon.svg"
+                                        alt="time icon" class="date__icon">
+                                    <div class="date__text">
+                                        20.12.2017
+                                    </div>
+                                </li>
+                                <li class="news-views news-info-item">
+                                    <img src="images/views-icon.svg"
+                                        alt="views icon"
+                                        class="news-views-icon">
+                                    <div class="news-views-text">1 278
+                                    </div>
+                                </li>
+                                <li class="news-comments news-info-item">
+                                    <img src="images/comments-icon.svg"
+                                        alt="comments icon"
+                                        class="news-comments-icon">
+                                    <div class="news-comments-text">3
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                    </h2>
+                    </div>
+                    <div class="experience-news news-gray">
+                        <img src="images/experience2.jpg" alt="experience"
+                            class="experience-news__background">
+                        <div class="experience-news__content">
+                            <h3 class="experience-news__title">Сколько денег
+                                подарить на свадьбу? 6 советов</h3>
+                            <ul class="news-info">
+                                <li class="date news-info-item">
+                                    <img src="images/time-icon.svg"
+                                        alt="time icon" class="date__icon">
+                                    <div class="date__text">
+                                        20.12.2017
+                                    </div>
+                                </li>
+                                <li class="news-views news-info-item">
+                                    <img src="images/views-icon.svg"
+                                        alt="views icon"
+                                        class="news-views-icon">
+                                    <div class="news-views-text">1 278
+                                    </div>
+                                </li>
+                                <li class="news-comments news-info-item">
+                                    <img src="images/comments-icon.svg"
+                                        alt="comments icon"
+                                        class="news-comments-icon">
+                                    <div class="news-comments-text">3
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-news news-gray">
+                        <img src="images/experience3.jpg" alt="experience"
+                            class="experience-news__background">
+                        <div class="experience-news__content">
+                            <h3 class="experience-news__title">Личный опыт:
+                                мы открыли магазин комиксов для взрослых
+                            </h3>
+                            <ul class="news-info">
+                                <li class="date news-info-item">
+                                    <img src="images/time-icon.svg"
+                                        alt="time icon" class="date__icon">
+                                    <div class="date__text">
+                                        20.12.2017
+                                    </div>
+                                </li>
+                                <li class="news-views news-info-item">
+                                    <img src="images/views-icon.svg"
+                                        alt="views icon"
+                                        class="news-views-icon">
+                                    <div class="news-views-text">1 278
+                                    </div>
+                                </li>
+                                <li class="news-comments news-info-item">
+                                    <img src="images/comments-icon.svg"
+                                        alt="comments icon"
+                                        class="news-comments-icon">
+                                    <div class="news-comments-text">3
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-news news-gray">
+                        <img src="images/experience4.jpg" alt="experience"
+                            class="experience-news__background">
+                        <div class="experience-news__content">
+                            <h3 class="experience-news__title">Личный опыт:
+                                как сицилиец открыл итальянское кафе в
+                                Москве</h3>
+                            <ul class="news-info">
+                                <li class="date news-info-item">
+                                    <img src="images/time-icon.svg"
+                                        alt="time icon" class="date__icon">
+                                    <div class="date__text">
+                                        20.12.2017
+                                    </div>
+                                </li>
+                                <li class="news-views news-info-item">
+                                    <img src="images/views-icon.svg"
+                                        alt="views icon"
+                                        class="news-views-icon">
+                                    <div class="news-views-text">1 278
+                                    </div>
+                                </li>
+                                <li class="news-comments news-info-item">
+                                    <img src="images/comments-icon.svg"
+                                        alt="comments icon"
+                                        class="news-comments-icon">
+                                    <div class="news-comments-text">3
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-news news-gray">
+                        <img src="images/experience5.jpg" alt="experience"
+                            class="experience-news__background">
+                        <div class="experience-news__content">
+                            <h3 class="experience-news__title">Личный опыт:
+                                я отказалась от офиса и работаю на фрилансе
+                            </h3>
+                            <ul class="news-info">
+                                <li class="date news-info-item">
+                                    <img src="images/time-icon.svg"
+                                        alt="time icon" class="date__icon">
+                                    <div class="date__text">
+                                        20.12.2017
+                                    </div>
+                                </li>
+                                <li class="news-views news-info-item">
+                                    <img src="images/views-icon.svg"
+                                        alt="views icon"
+                                        class="news-views-icon">
+                                    <div class="news-views-text">1 278
+                                    </div>
+                                </li>
+                                <li class="news-comments news-info-item">
+                                    <img src="images/comments-icon.svg"
+                                        alt="comments icon"
+                                        class="news-comments-icon">
+                                    <div class="news-comments-text">3
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#" class="button__link all-articles">Все статьи по
+                        теме</a>
                 </div>
             </div>
         </section>
+        <section class="categories">
+            <div class="container">
+                <ul class="categories__list">
+                    <li class="categories__item">Бизнес</li>
+                    <li class="categories__item">Криптовалюта</li>
+                    <li class="categories__item">Россельхозбанк</li>
+                    <li class="categories__item">Вклады</li>
+                    <li class="categories__item">Ипотека</li>
+                    <li class="categories__item">Общество</li>
+                    <li class="categories__item">Банки России</li>
+                    <li class="categories__item">Страхование</li>
+                    <li class="categories__item">Полезное</li>
+                    <li class="categories__item">МФО и займы</li>
+                    <li class="categories__item">Bitcoin</li>
+                    <li class="categories__item">Платежная система "МИР"</li>
+                    <li class="categories__item">Платежные и денежные системы
+                    </li>
+                    <li class="categories__item">Бюро кредитных историй</li>
+                    <li class="categories__item">Котировки</li>
+                    <li class="categories__item">Экономика</li>
+                    <li class="categories__item">Криптовалюты</li>
+                </ul>
+                <button class="categories__button">Показать еще</button>
+            </div>
+        </section>
+        <section class="advertising advertising__third">
+            <a href="#" class="advertising__link">
+                <img src="images/advertising4.jpg" alt="advertising"
+                    class="advertising__image">
+            </a>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <a href="#" class="footer__logo">
+                <img src="images/logo_bankiros.svg"
+                    alt="logo bankiros" class="footer__logo-image">
+            </a>
+            <div class="footer__appraisal">
+                <span class="footer__appraisal-text"></span><img src="" alt=""
+                    class="footer__appraisal-image">
+                <div class="footer__appraisal-vote"></div>
+            </div>
+        </div>
+    </footer>
 
     <script src="scripts/libs.min.js"></script>
     <script src="scripts/main.min.js"></script>

@@ -169,6 +169,7 @@ button:focus {
         border: 1px solid #DADEE2;
         padding: 18px 0;
         background: #FFFFFF;
+        transition: 0.5s cubic-bezier(.6, -.28, .735, .045);
     }
 
     &__nav {
@@ -198,6 +199,11 @@ button:focus {
                 cursor: pointer;
             }
         }
+    }
+
+    &__button-menu {
+        display: none;
+        width: 37px;
     }
 }
 
@@ -325,6 +331,10 @@ button:focus {
     margin-right: 8px;
 }
 
+.news {
+    overflow: hidden;
+}
+
 .top-news {
     position: relative;
     width: 100%;
@@ -432,6 +442,8 @@ button:focus {
     max-width: 405px;
 
     &__image {
+        width: 405px;
+        height: 157px;
         margin-bottom: 10px;
         border-radius: 5px;
     }
@@ -839,6 +851,40 @@ button:focus {
 
 @media (max-width: 780px) {
 
-    
+    .header__actions {
+        display: none;
+    }
 
+    .header__button-menu {
+        display: block;
+    }
+
+    .header__menu {
+        flex-direction: column;
+    }
+
+    .header__bottom {
+        position: absolute;
+        max-width: 300px;
+        right: -200px;
+        top: 58px;
+        z-index: 999;
+        height: 222px;
+        background: #fff;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .top-news {
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+}
+
+.menu-active {
+    right: 0px;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

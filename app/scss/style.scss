@@ -463,7 +463,6 @@ button:focus {
         color: var(--gray2);
     }
 
-
 }
 
 .date {
@@ -863,14 +862,50 @@ button:focus {
         flex-direction: column;
     }
 
+    .header__bottom .container,
+    .header__nav {
+        height: 100%;
+    }
+
     .header__bottom {
         position: absolute;
         max-width: 300px;
-        right: -200px;
+        right: -270px;
         top: 58px;
         z-index: 999;
-        height: 222px;
-        background: #fff;
+        height: calc(100vh - 58px);
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .header__menu {
+        height: 70%;
+    }
+
+    .header__menu-item-link {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .header__menu-item {
+        justify-content: center;
+    }
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__menu-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__menu-item-link {
+        margin-right: 0;
+    }
+
+    .header__menu-item-button {
+        display: none;
     }
 
 }

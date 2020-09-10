@@ -83,8 +83,8 @@ button:focus {
         width: 100%;
 
         &-item {
-            display: flex;
-            justify-content: space-between;
+
+
             padding: 0 calc((100% - 471px) / 4);
             border-right: 1px solid #DADEE2;
             border-left: 1px solid #DADEE2;
@@ -95,61 +95,12 @@ button:focus {
                 border: none;
             }
 
-            &-info {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                max-width: 63px;
-
-                &:first-child {
-                    margin-right: 30px;
-                }
-            }
-
             &:last-child,
             &:first-child {
                 padding: 0;
                 border: 0;
             }
 
-            &-currency {
-                font-size: 14px;
-                line-height: 20px;
-                margin-right: 4px;
-                text-transform: uppercase;
-                color: #388EC3;
-            }
-
-            &-text {
-                text-transform: uppercase;
-                font-size: 12px;
-                line-height: 22px;
-                color: #9299A2;
-            }
-
-            &-value {
-                font-size: 14px;
-                line-height: 20px;
-            }
-        }
-    }
-
-    &__city {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        max-width: 61px;
-        border: none;
-
-        &-icon {
-            width: 10px;
-            height: 16px;
-        }
-
-        &-name {
-            font-size: 14px;
-            line-height: 14px;
         }
     }
 
@@ -158,11 +109,10 @@ button:focus {
         justify-content: space-between;
         max-width: 115px;
         width: 100%;
-    }
 
-    &__search {
-        border: none;
-        cursor: pointer;
+        &-item:first-child {
+            width: 100%;
+        }
     }
 
     &__bottom {
@@ -204,6 +154,66 @@ button:focus {
     &__button-menu {
         display: none;
         width: 37px;
+    }
+}
+
+.search {
+    border: none;
+    cursor: pointer;
+}
+
+.city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 61px;
+    border: none;
+
+    &__icon {
+        width: 10px;
+        height: 16px;
+    }
+
+    &__name {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+.exchange-item {
+    display: flex;
+    justify-content: space-between;
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 63px;
+
+        &:first-child {
+            margin-right: 30px;
+        }
+    }
+
+    &__currency {
+        font-size: 14px;
+        line-height: 20px;
+        margin-right: 4px;
+        text-transform: uppercase;
+        color: #388EC3;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 22px;
+        color: #9299A2;
+    }
+
+    &__value {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 

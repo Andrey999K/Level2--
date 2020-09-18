@@ -76,8 +76,16 @@
                 <div class="header__actions">
                     <div class="header__actions-item">
                         <button class="city">
-                            <img src="images/location-icon.svg"
-                                alt="location icon" class="city__icon">
+                            <svg class="city__icon" width="12" height="16"
+                                viewBox="0 0 12 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.66666 0C3.90966 0 1.66666 2.43592 1.66666 5.43008C1.66666 6.63328 2.31892 8.46313 3.71939 11.1887C4.67504 13.0484 5.62628 14.6192 5.66641 14.6854L6.35395 15.8172C6.42327 15.9313 6.54072 16 6.66666 16C6.79259 16 6.91004 15.9313 6.97936 15.8172L7.66687 14.6855C7.70661 14.62 8.65093 13.0628 9.61393 11.1887C11.0144 8.46325 11.6667 6.63341 11.6667 5.43008C11.6667 2.43592 9.42365 0 6.66666 0ZM8.95968 10.7921C8.01009 12.64 7.08069 14.1729 7.04152 14.2373L6.66666 14.8543L6.29191 14.2374C6.25253 14.1725 5.316 12.6259 4.37363 10.7921C3.07458 8.26393 2.4159 6.45986 2.4159 5.43008C2.4159 2.8846 4.32277 0.813699 6.66666 0.813699C9.01054 0.813699 10.9174 2.8846 10.9174 5.43008C10.9174 6.45999 10.2587 8.264 8.95968 10.7921Z"
+                                    fill="#333E50" />
+                                <path
+                                    d="M5.92407 2.3855C4.39546 2.3855 3.15186 3.73611 3.15186 5.39619C3.15186 7.05626 4.39546 8.40687 5.92407 8.40687C7.45269 8.40687 8.69629 7.05626 8.69629 5.39619C8.69629 3.73611 7.45269 2.3855 5.92407 2.3855ZM5.92407 7.59318C4.80859 7.59318 3.9011 6.60762 3.9011 5.39619C3.9011 4.18475 4.80859 3.1992 5.92407 3.1992C7.03958 3.1992 7.94704 4.18475 7.94704 5.39619C7.94704 6.60762 7.03958 7.59318 5.92407 7.59318Z"
+                                    fill="#333E50" />
+                            </svg>
                             <span class="city__name">Россия</span>
                         </button>
                     </div>
@@ -98,66 +106,70 @@
         <div class="header__bottom">
             <div class="container">
                 <nav class="header__nav">
-                    <ul class="header__menu">
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-item-link">Курсы
-                                валют</a>
-                            <button class="header__menu-item-button">
-                                <img src="images/more.svg" alt="more"
-                                    class="header__menu-item-image">
-                            </button>
+                    <ul class="header-menu">
+                        <li class="header-menu__item">
+                            <div class="menu-link">
+                                <a href="#" class="header-menu__item-link">Курсы
+                                    валют</a>
+                                <button
+                                    class="header-menu__item-button"></button>
+                            </div>
                         </li>
-                        <li class="header__menu-item">
-                            <a href="#"
-                                class="header__menu-item-link">Вклады</a>
-                            <button class="header__menu-item-button">
-                                <img src="images/more.svg" alt="more"
-                                    class="header__menu-item-image">
-                            </button>
+                        <li class="header-menu__item">
+                            <div class="menu-link">
+                                <a href="#"
+                                    class="header-menu__item-link">Вклады</a>
+                                <button
+                                    class="header-menu__item-button"></button>
+                            </div>
                         </li>
-                        <li class="header__menu-item">
-                            <a href="#"
-                                class="header__menu-item-link">Кредиты</a>
-                            <button class="header__menu-item-button">
-                                <img src="images/more.svg" alt="more"
-                                    class="header__menu-item-image">
-                            </button>
+                        <li class="header-menu__item">
+                            <div class="menu-link">
+                                <a href="#"
+                                    class="header-menu__item-link">Кредиты</a>
+                                <button
+                                    class="header-menu__item-button"></button>
+                            </div>
                         </li>
-                        <li class="header__menu-item">
-                            <a href="#"
-                                class="header__menu-item-link">Ипотека</a>
-                            <button class="header__menu-item-button">
-                                <img src="images/more.svg" alt="more"
-                                    class="header__menu-item-image">
-                            </button>
+                        <li class="header-menu__item">
+                            <div class="menu-link">
+                                <a href="#"
+                                    class="header-menu__item-link">Ипотека</a>
+                                <button
+                                    class="header-menu__item-button"></button>
+                            </div>
                         </li>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-item-link">Займы</a>
-                            <button class="header__menu-item-button">
-                                <img src="images/more.svg" alt="more"
-                                    class="header__menu-item-image">
-                            </button>
+                        <li class="header-menu__item">
+                            <div class="menu-link">
+                                <a href="#"
+                                    class="header-menu__item-link">Займы</a>
+                                <button
+                                    class="header-menu__item-button"></button>
+                            </div>
                         </li>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-item-link">Карты</a>
-                            <button class="header__menu-item-button">
-                                <img src="images/more.svg" alt="more"
-                                    class="header__menu-item-image">
-                            </button>
+                        <li class="header-menu__item">
+                            <div class="menu-link">
+                                <a href="#"
+                                    class="header-menu__item-link">Карты</a>
+                                <button
+                                    class="header-menu__item-button"></button>
+                            </div>
                         </li>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-item-link">Банки</a>
-                            <button class="header__menu-item-button">
-                                <img src="images/more.svg" alt="more"
-                                    class="header__menu-item-image">
-                            </button>
+                        <li class="header-menu__item">
+                            <div class="menu-link">
+                                <a href="#"
+                                    class="header-menu__item-link">Банки</a>
+                                <button
+                                    class="header-menu__item-button"></button>
+                            </div>
                         </li>
-                        <li class="header__menu-item">
-                            <a href="#" class="header__menu-item-link">Еще</a>
-                            <button class="header__menu-item-button">
-                                <img src="images/more.svg" alt="more"
-                                    class="header__menu-item-image">
-                            </button>
+                        <li class="header-menu__item">
+                            <div class="menu-link">
+                                <a href="#"
+                                    class="header-menu__item-link">Еще</a>
+                                <button
+                                    class="header-menu__item-button"></button>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -168,30 +180,44 @@
     <main class="main">
         <div class="main__top">
             <div class="container">
-                <ul class="main__crumbs">
-                    <li class="main__crumbs-item">Главная</li>
-                    <li class="main__crumbs-item">Новости рынка и банков</li>
-                </ul>
-                <h2 class="main__title">Новости рынка и банков</h2>
+                <div class="page-breadcrumbs">
+                    <div class="page-breadcrumbs__item">Главная</div>
+                    <div class="page-breadcrumbs__item">Новости рынка и банков
+                    </div>
+                </div>
+                <h1 class="page-title">Новости рынка и банков</h1>
             </div>
         </div>
         <div class="main__nav">
             <div class="container">
-                <ul class="widget__tabs">
-                    <li class="widget__tabs-item widget__tabs-active">Все</li>
-                    <li class="widget__tabs-item">Популярное</li>
-                    <li class="widget__tabs-item">Курсы валют</li>
-                    <li class="widget__tabs-item">Банки России</li>
-                    <li class="widget__tabs-item">В мире</li>
+                <ul class="tabs">
+                    <li class="tabs__item tabs-active">
+                        <div class="tabs-item">Все</div>
+                    </li>
+                    <li class="tabs__item">
+                        <div class="tabs-item">Популярное</div>
+                    </li>
+                    <li class="tabs__item">
+                        <div class="tabs-item">Курсы валют</div>
+                    </li>
+                    <li class="tabs__item">
+                        <div class="tabs-item">Банки России</div>
+                    </li>
+                    <li class="tabs__item">
+                        <div class="tabs-item">В мире</div>
+                    </li>
                 </ul>
             </div>
         </div>
 
-        <section class="main__content">
+        <section class="main-content">
             <div class="container">
                 <div class="main-news">
+
                     <div class="news-block">
-                        <div class="news-gray top-news top-news-first">
+                        <div class="news-gray top-news">
+                            <img src="images/top-news-first-background.jpg"
+                                alt="" class="top-news__background">
                             <div class="top-news__inner">
                                 <button class="top-news__button">пенсии</button>
                                 <div class="top-news__title">В ПФР рассказали,
@@ -289,6 +315,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="advertising advertising__first">
@@ -297,7 +324,9 @@
                     </div>
 
                     <div class="news-block">
-                        <div class="news-gray top-news top-news-second">
+                        <div class="news-gray top-news">
+                            <img src="images/top-news-second-background.jpg"
+                                alt="" class="top-news__background">
                             <div class="top-news__inner">
                                 <button class="top-news__button">пенсии</button>
                                 <div class="top-news__title">В ПФР рассказали,
@@ -407,191 +436,236 @@
                 </div>
 
                 <aside class="sidebar">
-                    <div class="social sidebar-block">
-                        <h3 class="social__title">Читайте нас</h3>
-                        <ul class="social__list">
-                            <li class="social__list-item">
-                                <div class="social__network">
-                                    <img src="images/telegram-icon.svg" alt=""
-                                        class="social__icon">
+                    <div class="sidebar__item">
+                        <div class="social sidebar-block">
+                            <h3 class="social__title">Читайте нас</h3>
+                            <ul class="social__list">
+                                <li class="social__list-item">
+                                    <div class="social__network">
+                                        <img src="images/telegram-icon.svg"
+                                            alt="" class="social__icon">
+                                        <a href="#"
+                                            class="social__name">Telegram</a>
+                                    </div>
                                     <a href="#"
-                                        class="social__name">Telegram</a></div>
-                                <a href="#"
-                                    class="social__subscribe">Подписаться
-                                </a>
-                            </li>
-                            <li class="social__list-item">
-                                <div class="social__network">
-                                    <img src="images/facebook-icon.svg" alt=""
-                                        class="social__icon">
+                                        class="social__subscribe">Подписаться
+                                    </a>
+                                </li>
+                                <li class="social__list-item">
+                                    <div class="social__network">
+                                        <img src="images/facebook-icon.svg"
+                                            alt="" class="social__icon">
+                                        <a href="#"
+                                            class="social__name">Facebook</a>
+                                    </div>
                                     <a href="#"
-                                        class="social__name">Facebook</a></div>
-                                <a href="#"
-                                    class="social__subscribe">Подписаться
-                                </a>
-                            </li>
-                            <li class="social__list-item">
-                                <div class="social__network">
-                                    <img src="images/ok-icon.svg" alt=""
-                                        class="social__icon">
-                                    <a href="#" class="social__name">Ok.ru</a>
-                                </div>
-                                <a href="#"
-                                    class="social__subscribe">Подписаться
-                                </a>
-                            </li>
-                            <li class="social__list-item">
-                                <div class="social__network">
-                                    <img src="images/vk-icon.svg" alt=""
-                                        class="social__icon">
+                                        class="social__subscribe">Подписаться
+                                    </a>
+                                </li>
+                                <li class="social__list-item">
+                                    <div class="social__network">
+                                        <img src="images/ok-icon.svg" alt=""
+                                            class="social__icon">
+                                        <a href="#"
+                                            class="social__name">Ok.ru</a>
+                                    </div>
                                     <a href="#"
-                                        class="social__name">Вконтакте</a>
-                                </div>
-                                <a href="#"
-                                    class="social__subscribe">Подписаться
-                                </a>
-                            </li>
-                            <li class="social__list-item">
-                                <div class="social__network">
-                                    <img src="images/twitter-icon.svg" alt=""
-                                        class="social__icon">
-                                    <a href="#" class="social__name">Twitter</a>
-                                </div>
-                                <a href="#"
-                                    class="social__subscribe">Подписаться
-                                </a>
-                            </li>
-                            <li class="social__list-item">
-                                <div class="social__network">
-                                    <img src="images/yendex-dzen-icon.svg"
-                                        alt="" class="social__icon">
+                                        class="social__subscribe">Подписаться
+                                    </a>
+                                </li>
+                                <li class="social__list-item">
+                                    <div class="social__network">
+                                        <img src="images/vk-icon.svg" alt=""
+                                            class="social__icon">
+                                        <a href="#"
+                                            class="social__name">Вконтакте</a>
+                                    </div>
                                     <a href="#"
-                                        class="social__name">Яндекс.Дзен</a>
-                                </div>
-                                <a href="#"
-                                    class="social__subscribe">Подписаться
-                                </a>
-                            </li>
-                        </ul>
+                                        class="social__subscribe">Подписаться
+                                    </a>
+                                </li>
+                                <li class="social__list-item">
+                                    <div class="social__network">
+                                        <img src="images/twitter-icon.svg"
+                                            alt="" class="social__icon">
+                                        <a href="#"
+                                            class="social__name">Twitter</a>
+                                    </div>
+                                    <a href="#"
+                                        class="social__subscribe">Подписаться
+                                    </a>
+                                </li>
+                                <li class="social__list-item">
+                                    <div class="social__network">
+                                        <img src="images/yendex-dzen-icon.svg"
+                                            alt="" class="social__icon">
+                                        <a href="#"
+                                            class="social__name">Яндекс.Дзен</a>
+                                    </div>
+                                    <a href="#"
+                                        class="social__subscribe">Подписаться
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="releases sidebar-block">
-                        <h3 class="sidebar-block__title">Пресс-релизы</h3>
-                        <ul class="releases__list">
-                            <li class="releases__list-item">
-                                <div class="release__info">
-                                    <div class="release__name">Альфа-Банк открыл
-                                        первый официальный аккаунт в iMessage
+                    <div class="sidebar__item">
+                        <div class="releases sidebar-block">
+                            <h3 class="sidebar-block__title">Пресс-релизы</h3>
+                            <div class="releases-list">
+                                <ul class="releases-list__grid">
+                                    <li class="releases-list__item">
+                                        <div class="press-release">
+                                            <div class="press-release__info">
+                                                <div
+                                                    class="press-release__name">
+                                                    Альфа-Банк
+                                                    открыл
+                                                    первый официальный аккаунт в
+                                                    iMessage
+                                                </div>
+                                                <div class="date">
+                                                    <img src="images/time-icon.svg"
+                                                        alt="time icon"
+                                                        class="date__icon">
+                                                    <div class="date__text">
+                                                        20.12.2017
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="images/imessage.jpg"
+                                                alt="imessage"
+                                                class="press-release__image">
+                                        </div>
+                                    </li>
+                                    <li class="releases-list__item">
+                                        <div class="press-release">
+                                            <div class="press-release__info">
+                                                <div
+                                                    class="press-release__name">
+                                                    eSPORTconf
+                                                    Ukraine
+                                                    2019: актуально о деньгах в
+                                                    киберспорте
+                                                </div>
+                                                <div class="date">
+                                                    <img src="images/time-icon.svg"
+                                                        alt="time icon"
+                                                        class="date__icon">
+                                                    <div class="date__text">
+                                                        20.12.2017
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="images/eSPORTconf.jpg"
+                                                alt="eSPORTconf"
+                                                class="press-release__image">
+                                        </div>
+                                    </li>
+                                    <li class="releases-list__item">
+                                        <div class="press-release">
+                                            <div class="press-release__info">
+                                                <div
+                                                    class="press-release__name">
+                                                    Банк
+                                                    ВТБ
+                                                    приступил к
+                                                    выпуску премиальных карточек
+                                                    Visa
+                                                    Infinite
+                                                </div>
+                                                <div class="date">
+                                                    <img src="images/time-icon.svg"
+                                                        alt="time icon"
+                                                        class="date__icon">
+                                                    <div class="date__text">
+                                                        20.12.2017
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="images/vtb.jpg" alt="vtb"
+                                                class="press-release__image">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar__item">
+                        <div class="sidebar__advertising sidebar-block">
+                            <img src="images/advertising3.jpg" alt="папа джонс"
+                                class="sidebar__advertising-image">
+                        </div>
+                    </div>
+                    <div class="sidebar__item">
+                        <div class="currency sidebar-block">
+                            <h3 class="sidebar-block__title">Курсы валют</h3>
+                            <ul class="currency__list">
+                                <li class="currency__list-item">
+                                    <div class="currency__news-name">Курсы валют
+                                        11
+                                        июня: доллар – 64.7919, евро – 73.2148
                                     </div>
                                     <div class="date">
                                         <img src="images/time-icon.svg"
                                             alt="time icon" class="date__icon">
-                                        <div class="date__text">20.12.2017</div>
+                                        <div class="date__text">
+                                            20.12.2017
+                                        </div>
                                     </div>
-                                </div>
-                                <img src="images/imessage.jpg" alt="imessage"
-                                    class="release__image">
-                            </li>
-                            <li class="releases__list-item">
-                                <div class="release__info">
-                                    <div class="release__name">eSPORTconf
-                                        Ukraine
-                                        2019: актуально о деньгах в киберспорте
+                                </li>
+                                <li class="currency__list-item">
+                                    <div class="currency__news-name">«Рост перед
+                                        спадом». Сколько будет стоить доллар к
+                                        середине июня?
                                     </div>
                                     <div class="date">
                                         <img src="images/time-icon.svg"
                                             alt="time icon" class="date__icon">
-                                        <div class="date__text">20.12.2017</div>
+                                        <div class="date__text">
+                                            20.12.2017
+                                        </div>
                                     </div>
-                                </div>
-                                <img src="images/eSPORTconf.jpg"
-                                    alt="eSPORTconf" class="release__image">
-                            </li>
-                            <li class="releases__list-item">
-                                <div class="release__info">
-                                    <div class="release__name">Банк ВТБ
-                                        приступил к
-                                        выпуску премиальных карточек Visa
-                                        Infinite
-                                    </div>
+                                </li>
+                                <li class="currency__list-item">
+                                    <div class="currency__news-name">МЭР обновил
+                                        прогноз курса рубля на 2019 год</div>
                                     <div class="date">
                                         <img src="images/time-icon.svg"
                                             alt="time icon" class="date__icon">
-                                        <div class="date__text">20.12.2017</div>
+                                        <div class="date__text">
+                                            20.12.2017
+                                        </div>
                                     </div>
-                                </div>
-                                <img src="images/vtb.jpg" alt="vtb"
-                                    class="release__image">
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="currency__list-item">
+                                    <div class="currency__news-name">МЭР обновил
+                                        прогноз курса рубля на 2019 год</div>
+                                    <div class="date">
+                                        <img src="images/time-icon.svg"
+                                            alt="time icon" class="date__icon">
+                                        <div class="date__text">
+                                            20.12.2017
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="currency__list-item">
+                                    <div class="currency__news-name">МЭР обновил
+                                        прогноз курса рубля на 2019 год</div>
+                                    <div class="date">
+                                        <img src="images/time-icon.svg"
+                                            alt="time icon" class="date__icon">
+                                        <div class="date__text">
+                                            20.12.2017
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="sidebar__advertising sidebar-block">
-                        <img src="images/advertising3.jpg" alt="папа джонс"
-                            class="sidebar__advertising-image">
-                    </div>
-                    <div class="currency sidebar-block">
-                        <h3 class="sidebar-block__title">Курсы валют</h3>
-                        <ul class="currency__list">
-                            <li class="currency__list-item">
-                                <div class="currency__news-name">Курсы валют 11
-                                    июня: доллар – 64.7919, евро – 73.2148</div>
-                                <div class="date">
-                                    <img src="images/time-icon.svg"
-                                        alt="time icon" class="date__icon">
-                                    <div class="date__text">
-                                        20.12.2017
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="currency__list-item">
-                                <div class="currency__news-name">«Рост перед
-                                    спадом». Сколько будет стоить доллар к
-                                    середине июня?
-                                </div>
-                                <div class="date">
-                                    <img src="images/time-icon.svg"
-                                        alt="time icon" class="date__icon">
-                                    <div class="date__text">
-                                        20.12.2017
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="currency__list-item">
-                                <div class="currency__news-name">МЭР обновил
-                                    прогноз курса рубля на 2019 год</div>
-                                <div class="date">
-                                    <img src="images/time-icon.svg"
-                                        alt="time icon" class="date__icon">
-                                    <div class="date__text">
-                                        20.12.2017
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="currency__list-item">
-                                <div class="currency__news-name">МЭР обновил
-                                    прогноз курса рубля на 2019 год</div>
-                                <div class="date">
-                                    <img src="images/time-icon.svg"
-                                        alt="time icon" class="date__icon">
-                                    <div class="date__text">
-                                        20.12.2017
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="currency__list-item">
-                                <div class="currency__news-name">МЭР обновил
-                                    прогноз курса рубля на 2019 год</div>
-                                <div class="date">
-                                    <img src="images/time-icon.svg"
-                                        alt="time icon" class="date__icon">
-                                    <div class="date__text">
-                                        20.12.2017
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
 
+
+                </aside>
 
             </div>
         </section>

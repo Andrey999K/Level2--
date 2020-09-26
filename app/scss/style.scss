@@ -541,30 +541,17 @@ button:focus {
     background: #FFFFFF;
 }
 
-.sidebar {
+.page-sidebar {
     width: 100%;
     max-width: 300px;
 
     &__item {
-        margin: 60px 0;
-        // border-bottom: 1px solid #E8ECEF;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #E8ECEF;
 
         &:first-child {
             margin-top: 0;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        &::after {
-            content: "";
-            display: block;
-            position: relative;
-            top: 30px;
-            height: 1px;
-            width: 100%;
-            background: #E8ECEF;
         }
     }
 
@@ -583,30 +570,21 @@ button:focus {
     }
 }
 
-.social {
+.small {
+    font-size: 18px;
+}
 
-    &__title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 22px;
-        margin-bottom: 15px;
-    }
+.sidebar-socials {
 
-    &__list {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 3px;
+        margin-bottom: 5px;
 
-        &-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #F1F4F7;
-            border-radius: 3px;
-            margin-bottom: 5px;
-            padding: 7px 15px;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 
@@ -645,6 +623,104 @@ button:focus {
             background: url(../images/next-level-menu.svg) no-repeat center/cover;
         }
     }
+}
+
+.socials-item {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    &__link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+
+        &:hover+* {
+            background: darken($color:#F1F4F7, $amount: 5%);
+        }
+
+        &:hover+* {
+            .socials-item__label::after {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background: #F1F4F7;
+        padding: 7px 15px;
+        transition: 0.35s;
+    }
+
+    &__icon {
+        position: relative;
+        width: 100%;
+        flex: 0 0 30px;
+        max-width: 30px;
+
+        &::after {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        margin-left: 10px;
+        color: #333E50;
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: auto;
+        color: #9299A2;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 10px;
+            margin-left: 8px;
+            transition: 0.35s;
+            background: url(../images/next-level-menu.svg) no-repeat center/cover;
+        }
+    }
+}
+
+.sidebar-block__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.sidebar-block__header+.sidebar-block__content {
+    margin-top: 16px;
 }
 
 .releases-list {

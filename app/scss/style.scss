@@ -723,7 +723,7 @@ button:focus {
     margin-top: 16px;
 }
 
-.releases-list {
+.sidebar-releases {
 
     &__item {
         margin-bottom: 20px;
@@ -761,18 +761,19 @@ button:focus {
     text-align: center;
 }
 
-.currency {
-    &__list {
-        &-item {
-            margin-bottom: 20px;
+.sidebar-currency {
 
-            &:last-child {
-                margin-bottom: 0;
-            }
+    &__item {
+        margin-top: 20px;
+
+        :first-child {
+            margin-top: 0;
         }
     }
+}
 
-    &__news-name {
+.currency-item {
+    &__name {
         font-weight: 700;
         font-size: 16px;
         line-height: 19px;
